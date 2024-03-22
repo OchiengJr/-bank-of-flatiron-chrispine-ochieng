@@ -68,12 +68,3 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Feel free to customize this template to better suit your project's specific needs. Make sure to replace <repository-url> with the actual URL of your repository. Additionally, update the setup instructions and technologies used sections with accurate information about your project.
-
-
-
-
-
-
-Message ChatGPT…
-
-ChatGPT can m
