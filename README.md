@@ -1,136 +1,79 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/u-8Hc-M5)
-# Bank of Flatiron
+Flatiron Bank Project
+Overview
+Flatiron Bank is a banking application developed as a project for the Flatiron School curriculum. This project aims to simulate basic banking functionalities such as account management, transactions, and balance tracking.
 
-Welcome to the Bank of Flatiron, where you can trust us with all your financial
-data! Use the below gif as an example of how the app should function.
+Features
+User authentication: Users can sign up, log in, and log out securely.
+Account management: Users can create, view, update, and delete bank accounts.
+Transactions: Users can deposit, withdraw, and transfer funds between accounts.
+Balance tracking: Users can view their account balances in real-time.
+Technologies Used
+Frontend: React.js, Redux, CSS
+Backend: Ruby on Rails, PostgreSQL
+Authentication: JSON Web Tokens (JWT)
+Testing: Jest, React Testing Library, RSpec
+Setup Instructions
+To set up the Flatiron Bank project locally, follow these steps:
 
-![demo](https://curriculum-content.s3.amazonaws.com/phase-2/phase-2-code-challenge-bank-of-flatiron/demo.gif)
+Clone the repository:
 
-> To view in VSCode, right click on the README.md file and select "Open Preview".
+bash
+Copy code
+Navigate to the project directory:
 
-## Instructions
+bash
+Copy code
+cd flatiron-bank
+Install dependencies for both the frontend and backend:
 
-For this project, you’ll be building out a React application that displays a
-list of your recent bank transactions, among other features.
+bash
+Copy code
+# Install frontend dependencies
+cd frontend
+npm install
 
-Part of what this code challenge is testing is your ability to follow given
-instructions. While you will definitely have a significant amount of freedom in
-how you implement the features, be sure to carefully read the directions for
-setting up the application.
+# Install backend dependencies
+cd ../backend
+bundle install
+Set up the database:
 
-## Setup
+bash
+Copy code
+cd backend
+rails db:create
+rails db:migrate
+Start the backend server:
 
-After unbundling the project:
+bash
+Copy code
+rails s
+Start the frontend server:
 
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `8001`.
-3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
+bash
+Copy code
+# From the frontend directory
+npm start
+Open your browser and navigate to http://localhost:3000 to view the application.
 
-Make sure to open
-[http://localhost:8001/transactions](http://localhost:8001/transactions) in the
-browser to verify that your backend is working before you proceed!
+Contributing
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
-The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any
-unfamiliar classNames on some components, don't sweat! That's coming from
-Semantic UI and you shouldn't need to touch it.
+Fork the repository.
+Create a new branch (git checkout -b feature/my-feature).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature/my-feature).
+Create a new Pull Request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-If you are unfamiliar with HTML tables, take a look at the
-[docs with an example here](https://www.w3schools.com/html/html_tables.asp)
+Feel free to customize this template to better suit your project's specific needs. Make sure to replace <repository-url> with the actual URL of your repository. Additionally, update the setup instructions and technologies used sections with accurate information about your project.
 
-## Endpoints
 
-The base URL for your backend is: `http://localhost:8001`
 
-## Core Deliverables
 
-As a user, I should be able to:
 
-- See a table of the transactions.
-- Fill out and submit the form to add a new transaction. This should add the new
-  transaction to the table **as well as post the new transaction to the backend
-  API for persistence**.
-- Filter transactions by typing into the search bar. Only transactions with a
-  description matching the search term should be shown in the transactions
-  table.
 
-### Endpoints for Core Deliverables
+Message ChatGPT…
 
-#### GET /transactions
-
-Example Response:
-
-```json
-[
-  {
-    "id": 1,
-    "date": "2019-12-01",
-    "description": "Paycheck from Bob's Burgers",
-    "category": "Income",
-    "amount": 1000
-  },
-  {
-    "id": 2,
-    "date": "2019-12-01",
-    "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-    "category": "Food",
-    "amount": -10.55
-  }
-]
-```
-
-#### POST `/transactions`
-
-Required Headers:
-
-```js
-{
-  "Content-Type": "application/json"
-}
-```
-
-Request Object:
-
-```json
-{
-  "date": "string",
-  "description": "string",
-  "category": "string",
-  "amount": number
-}
-```
-
-Example Response:
-
-```json
-{
-  "id": 1,
-  "date": "2019-12-01",
-  "description": "Paycheck from Bob's Burgers",
-  "category": "Income",
-  "amount": 1000
-}
-```
-
-## Advanced Deliverables
-
-These deliverables are not required to pass the code challenge, but if you have
-the extra time, or even after the code challenge, they are a great way to
-stretch your skills.
-
-> Note: If you are going to attempt these advanced deliverables, please be sure
-> to have a working commit with all the Core Deliverables first!
-
-As a user, I should be able to:
-
-- Sort transactions alphabetically by category or description.
-- Delete a transaction which will remove it from the table and delete it from the backend.
-
-### Endpoints for Advanced Deliverables
-
-#### DELETE /transactions/:id
-
-Example Response:
-
-```json
-{}
-```
+ChatGPT can m
